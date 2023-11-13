@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Commando B3 E-sport</title>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <button onclick="login()">Login with Firebase</button>
-
-    <!-- Add Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js"></script>
-
-    <script>
-        // Replace with your Firebase config
-        var firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_AUTH_DOMAIN",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_STORAGE_BUCKET",
-            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        function login() {
-            // Implement Firebase login logic here
-            // Example: firebase.auth().signInWithEmailAndPassword(email, password);
-            console.log("Login button clicked");
-        }
-    </script>
+    <header>
+        <h1>Commando B3 E-sport</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#equipe">Équipe</a></li>
+            <li><a href="#tournois">Tournois</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Bienvenue chez Commando B3 E-sport</h2>
+        <p>La meilleure équipe pour les passionnés de jeux vidéo.</p>
+    </section>
+    <section id="equipe">
+        <h2>Notre Équipe</h2>
+        <!-- Ajoutez ici des informations sur les membres de l'équipe -->
+    </section>
+    <section id="tournois">
+        <h2>Tournois</h2>
+        <!-- Ajoutez ici des détails sur les tournois à venir ou passés -->
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <!-- Ajoutez ici un formulaire de contact ou des coordonnées -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Commando B3 E-sport. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

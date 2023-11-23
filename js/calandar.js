@@ -85,7 +85,7 @@ function app() {
             let daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
 
             // find where to start calendar day of week
-            let dayOfWeek = new Date(this.year, this.month).getDay();
+            let dayOfWeek = new Date(this.year, this.month).getDay()-1;
             let blankdaysArray = [];
             for ( var i=1; i <= dayOfWeek; i++) {
                 blankdaysArray.push(i);

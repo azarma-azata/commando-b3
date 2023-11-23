@@ -53,7 +53,7 @@
 
 <div class="antialiased sans-serif bg-gray-100 h-screen">
 	<div x-data="app()" x-init="[initDate(), getNoOfDays()]" x-cloak>
-		<div class="container mx-auto px-4 py-2 md:py-24">
+		<div class="container mx-auto px-5 py-2 md:py-24">
 			  
 			<div class="bg-white rounded-lg shadow overflow-hidden">
 
@@ -113,7 +113,7 @@
 									class="inline-flex w-6 h-6 items-center justify-center cursor-pointer text-center leading-none rounded-full transition ease-in-out duration-100"
 									:class="{'bg-blue-500 text-white': isToday(date) == true, 'text-gray-700 hover:bg-blue-200': isToday(date) == false }"	
 								></div>
-								<div style="height: 80px;" class="overflow-y-auto mt-1">
+								<div style="height: 80px;" class="mt-1">
 									<!-- <div 
 										class="absolute top-0 right-0 mt-2 mr-2 inline-flex items-center justify-center rounded-full text-sm w-6 h-6 bg-gray-700 text-white leading-none"
 										x-show="events.filter(e => e.event_date === new Date(year, month, date).toDateString()).length"
@@ -121,7 +121,8 @@
 
 									<template x-for="event in events.filter(e => new Date(e.event_date).toDateString() ===  new Date(year, month, date).toDateString() )">	
 										<div
-											class="px-2 py-1 rounded-lg mt-1 overflow-hidden border"
+											style="width: 165px"
+											class="px-3 py-1 rounded-lg mt-1 border"
 											:class="{
 												'border-blue-200 text-blue-800 bg-blue-100': event.event_theme === 'blue',
 												'border-red-200 text-red-800 bg-red-100': event.event_theme === 'red',
@@ -130,7 +131,7 @@
 												'border-purple-200 text-purple-800 bg-purple-100': event.event_theme === 'purple'
 											}"
 										>
-											<p x-text="event.event_title" class="text-sm truncate leading-tight"></p>
+											<p style="width: 150px" x-text="event.event_title" class="text-sm truncate leading-tight"></p>
 										</div>
 									</template>
 								</div>

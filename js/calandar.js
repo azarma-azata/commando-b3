@@ -14,6 +14,11 @@ function app() {
                 event_date: new Date(2023, 10, 20),
                 event_title: "Début AFO",
                 event_theme: 'green'
+            },
+            {
+                event_date: new Date(2023, 10, 25),
+                event_title: "Match VS Les Normaux ",
+                event_theme: 'red'
             }
         ],
         event_title: '',

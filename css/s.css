@@ -1,0 +1,133 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+html {
+    background-color: #1f1f1f;
+  }
+  
+  .video-container {
+      height: 500px;
+      width: auto;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+    
+    .video-container video {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    
+    /* Just styling the content of the div, the *magic* in the previous rules */
+    .video-container .caption {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      color: #dc0000;
+      padding: 10px;
+    }
+  
+    #pauseButton {
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      z-index: 1; /* Assure que le bouton est au-dessus de la vidéo */
+  }
+
+nav{
+    background-color: #181818;
+    color: #fff;
+    padding: 25px;
+    left: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    float: left;
+    width: 10%;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+
+.sous{
+    display: none;
+    background-color: #181818;
+    position: absolute;
+    border-radius: 0% 0% 10% 10%;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+    border-radius: 0% 0% 10% 10%;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+footer {
+    background-color: #181818;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

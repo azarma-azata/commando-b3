@@ -16,8 +16,8 @@ function app() {
                 event_theme: 'green'
             },
             {
-                event_date: new Date(2023, 10, 25),
-                event_title: "Match VS Les Normaux ",
+                event_date: new Date(2023, 11, 9),
+                event_title: "Match VS Deathwalk",
                 event_theme: 'red'
             }
         ],
